@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIL PetChem IT - Internship Presentation</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Load font-awesome like styling icons for modern indicators -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="brand-title">
+      <span class="brand-logo-txt">Reliance</span> Industries Limited | PetChem – IT
+    </div>
+    <div class="app-controls">
+      <button class="btn-ctrl active" id="btn-toggle-sidebar" title="Toggle Slide List">
+        <i class="fa-solid fa-list"></i> Slides
+      </button>
+      <button class="btn-ctrl active" id="btn-toggle-notes" title="Toggle Speaker Notes">
+        <i class="fa-solid fa-file-lines"></i> Presenter Notes
+      </button>
+      <button class="btn-ctrl" id="btn-fullscreen" title="Go Fullscreen">
+        <i class="fa-solid fa-expand"></i> Fullscreen
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <div class="viewer-container">
+    
+    <!-- Left Navigation Sidebar -->
+    <aside class="slide-sidebar" id="slide-sidebar">
+      <div class="sidebar-header">Slide Index</div>
+      <ul class="slide-nav-list">
+        <li class="slide-nav-item active">
+          <span class="slide-number-badge">1</span> Title Slide
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">2</span> Internship Overview
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">3</span> Internship Journey
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">4</span> Project 1 - AI Agent
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">5</span> Evaluation Methodology
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">6</span> Evaluation Results
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">7</span> Dashboard Design
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">8</span> Executive Dashboard
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">9</span> Challenges & Solutions
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">10</span> Key Learnings
+        </li>
+        <li class="slide-nav-item">
+          <span class="slide-number-badge">11</span> Thank You
+        </li>
+      </ul>
+    </aside>
+
+    <!-- Slide Presentation Arena -->
+    <main class="presentation-stage" id="presentation-stage">
+
+      <!-- ================= SLIDE 1 ================= -->
+      <div class="slide-canvas active" id="slide-1">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <!-- Blank for title page structure -->
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 1.1rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <div class="slide-title-hero">
+            <h1>Summer Internship Project Review</h1>
+            <p>AI-Assisted Business Intelligence & Executive Dashboard Development</p>
+            <div class="slide-title-divider"></div>
+            <p style="font-size: 1rem; color: var(--text-secondary); max-width: 600px;">
+              Petrochemicals IT Division — Structured evaluation of Enterprise AI Assistants & Interactive Tableau Performance scorecards.
+            </p>
+          </div>
+          
+          <div class="slide-title-footer">
+            <div class="presenter-details">
+              <div>
+                <div class="presenter-label">Presenter</div>
+                <div class="presenter-value">Raunish Kathpalia</div>
+                <div class="presenter-value" style="font-weight: 400; font-size: 0.85rem;">MBA, NIT Kurukshetra</div>
+              </div>
+              <div>
+                <div class="presenter-label">Mentor</div>
+                <div class="presenter-value">Mr. Saurabh Shringarpure</div>
+                <div class="presenter-value" style="font-weight: 400; font-size: 0.85rem;">PetChem – IT</div>
+              </div>
+            </div>
+            <div style="text-align: right;">
+              <div class="presenter-label">Internship Timeline</div>
+              <div class="presenter-value">01 June 2026 – 24 July 2026</div>
+              <div class="presenter-value" style="font-weight: 400; font-size: 0.85rem;">RIL Corporate Office</div>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 1: Title Slide</strong></p>
+          <p>Good morning team and members of the PetChem IT department. I am Raunish Kathpalia, an MBA candidate from NIT Kurukshetra.</p>
+          <ul>
+            <li>Over the past eight weeks, from June 1st to July 24th, I had the privilege of interning with the PetChem IT division under the mentorship of Mr. Saurabh Shringarpure.</li>
+            <li>This presentation details the two key projects completed during my internship: a structured business evaluation of AI assistants using customer visit logs, and the creation of an executive performance scorecard in Tableau.</li>
+            <li>Let's start by looking at the overview of the internship objectives.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 2 ================= -->
+      <div class="slide-canvas" id="slide-2">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Internship Overview</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <div class="grid-right-side-wide">
+            
+            <!-- Left Info Card -->
+            <div class="card highlighted flex-col justify-between">
+              <div>
+                <h3 class="card-heading" style="margin-bottom: 0.75rem;">
+                  <i class="fa-solid fa-briefcase"></i> Placement Context
+                </h3>
+                <p style="font-size: 0.9rem; line-height: 1.5; color: var(--text-primary); margin-bottom: 1.5rem;">
+                  Operating at the intersection of business strategy and IT, this internship was designed to transition from tools training into delivering enterprise analytical assets.
+                </p>
+                
+                <table style="width: 100%; font-size: 0.85rem; border-collapse: collapse;">
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 8px 0; color: var(--text-secondary); font-weight: 500;">Department</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600; color: var(--ril-navy);">PetChem – IT</td>
+                  </tr>
+                  <tr style="border-bottom: 1px solid var(--border-color);">
+                    <td style="padding: 8px 0; color: var(--text-secondary); font-weight: 500;">Role Focus</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600; color: var(--ril-navy);">Business Intelligence</td>
+                  </tr>
+                  <tr>
+                    <td style="padding: 8px 0; color: var(--text-secondary); font-weight: 500;">Key Platform</td>
+                    <td style="padding: 8px 0; text-align: right; font-weight: 600; color: var(--ril-navy);">Databricks & Tableau</td>
+                  </tr>
+                </table>
+              </div>
+              
+              <div class="table-meta-text" style="border-top: 1px solid var(--border-color); padding-top: 8px; margin-top: 1rem;">
+                Target: Provide leadership with clean tools to assess customer relationships and operational scorecards.
+              </div>
+            </div>
+
+            <!-- Right Objectives Grid -->
+            <div class="flex-col justify-between">
+              <div style="font-size: 1rem; font-weight: 600; color: var(--ril-navy); margin-bottom: 0.75rem;">
+                Core Deliverable Objectives
+              </div>
+              
+              <div class="grid-2" style="grid-template-rows: auto auto; gap: 1rem; flex: 1;">
+                <div class="card">
+                  <div class="card-heading" style="font-size: 1rem; margin-bottom: 0.5rem;">
+                    <span class="icon-obj">01</span> Databricks Proficiency
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                    Mastering query workflows within the Databricks environment to audit and manipulate unstructured tables.
+                  </p>
+                </div>
+                
+                <div class="card">
+                  <div class="card-heading" style="font-size: 1rem; margin-bottom: 0.5rem;">
+                    <span class="icon-obj">02</span> Customer Data Audit
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                    Analyzing visit summaries to identify account trust levels and structural divisions in customer interactions.
+                  </p>
+                </div>
+                
+                <div class="card">
+                  <div class="card-heading" style="font-size: 1rem; margin-bottom: 0.5rem;">
+                    <span class="icon-obj">03</span> AI Assistant Evaluation
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                    Establishing a reproducible benchmark to compare LLM performance on unstructured customer queries.
+                  </p>
+                </div>
+                
+                <div class="card">
+                  <div class="card-heading" style="font-size: 1rem; margin-bottom: 0.5rem;">
+                    <span class="icon-obj">04</span> Scorecard Integration
+                  </div>
+                  <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.4;">
+                    Designing interactive worksheets and radial performance dials in Tableau to display plant metric health.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 2: Internship Overview</strong></p>
+          <p>This overview establishes the operational context. Placed within PetChem IT, my role bridged technical evaluation with business management.</p>
+          <ul>
+            <li>On the left, you see the profile details: the internship was focused on BI and performance evaluation.</li>
+            <li>On the right are the four main objectives: gaining proficiency in Databricks, auditing visit reports, evaluating AI tools, and designing Tableau dashboard metrics.</li>
+            <li>We structured the program so that each task naturally supported the next, forming a continuous workflow. Let's look at that timeline in the next slide.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 3 ================= -->
+      <div class="slide-canvas" id="slide-3">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Internship Journey</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body justify-between">
+          <div style="font-size: 0.95rem; line-height: 1.6; max-width: 800px; color: var(--text-primary);">
+            The internship progressed from initial systems training into executing two core business projects. This structured timeline shows the flow from data acquisition to presenting final executive dashboards.
+          </div>
+          
+          <!-- Timeline View -->
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-line-progress"></div>
+            
+            <div class="timeline-step completed">
+              <div class="timeline-node">1</div>
+              <div class="timeline-step-label">Databricks training</div>
+              <div class="timeline-step-desc">Weeks 1-2: Setup & query environment configuration</div>
+            </div>
+            
+            <div class="timeline-step completed">
+              <div class="timeline-node">2</div>
+              <div class="timeline-step-label">Data Audit</div>
+              <div class="timeline-step-desc">Week 3: Cleaning Customer Visit reports</div>
+            </div>
+            
+            <div class="timeline-step completed">
+              <div class="timeline-node">3</div>
+              <div class="timeline-step-label">AI Benchmark</div>
+              <div class="timeline-step-desc">Weeks 4-5: Standardizing identical prompts</div>
+            </div>
+            
+            <div class="timeline-step completed">
+              <div class="timeline-node">4</div>
+              <div class="timeline-step-label">AI Evaluation</div>
+              <div class="timeline-step-desc">Week 5: Comparing model outputs</div>
+            </div>
+            
+            <div class="timeline-step active">
+              <div class="timeline-node">5</div>
+              <div class="timeline-step-label">Dashboard Build</div>
+              <div class="timeline-step-desc">Weeks 6-7: Setting Tableau KPI views</div>
+            </div>
+            
+            <div class="timeline-step">
+              <div class="timeline-node">6</div>
+              <div class="timeline-step-label">Final Presentation</div>
+              <div class="timeline-step-desc">Week 8: Dashboard final checks</div>
+            </div>
+          </div>
+
+          <div class="highlight-panel-blue">
+            <span class="highlight-panel-blue-text">
+              <strong>Progress Summary:</strong> Successfully completed platform training and customer audits (Project 1), transitioning into data calculations and executive sheet design (Project 2).
+            </span>
+            <span class="highlight-panel-blue-val">8-Week Roadmap</span>
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 3: Internship Journey</strong></p>
+          <p>This roadmap details the progression over the eight weeks.</p>
+          <ul>
+            <li>Weeks 1 and 2 focused on foundational platform training in Databricks.</li>
+            <li>In Week 3, I audited and cleaned customer visit reports, which prepared the dataset for evaluation.</li>
+            <li>Weeks 4 and 5 were dedicated to Project 1, creating identical test prompts and benchmarking the AI models.</li>
+            <li>Weeks 6 and 7 were spent on Project 2, calculating metrics and designing Tableau worksheets.</li>
+            <li>Finally, Week 8 was devoted to refining the dashboard and compiling this presentation. Let's look closer at Project 1.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 4 ================= -->
+      <div class="slide-canvas" id="slide-4">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Project 1 — AI Agent Evaluation</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <div class="grid-evaluation-page">
+            
+            <!-- Objective Column -->
+            <div class="card highlighted flex-col justify-between">
+              <div>
+                <h3 class="card-heading" style="font-size: 1.05rem;">
+                  <i class="fa-solid fa-bullseye"></i> Evaluation Goal
+                </h3>
+                <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-primary); margin-bottom: 1rem;">
+                  Determine whether generative AI assistants can accurately analyze unstructured visit reports to extract relationship sentiment, identify account risks, and summarize division performance.
+                </p>
+              </div>
+              <div>
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--ril-navy); margin-bottom: 0.4rem;">Evaluation Models</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 5px;">
+                  <span class="badge-model claude">Claude 3.5 Sonnet</span>
+                  <span class="badge-model genie">Databricks Genie</span>
+                  <span class="badge-model chatgpt">ChatGPT-4o</span>
+                  <span class="badge-model gemini">Gemini 1.5 Pro</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dataset Screenshot Column -->
+            <div class="flex-col">
+              <div style="font-size: 0.85rem; font-weight: 600; color: var(--ril-navy); margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                <span>Customer Visit Dataset</span>
+                <span style="font-weight: 400; color: var(--text-secondary);">Source: book1.xlsx</span>
+              </div>
+              <div class="screenshot-container flex-grow">
+                <img src="assets/customer_visit_dataset.png" alt="Customer Visit Dataset Screenshot">
+              </div>
+              <div class="table-meta-text">
+                Unstructured logs covering customer complaints, sales divisions (POY, PSF, FDY, IDY, R3S), and visit purposes.
+              </div>
+            </div>
+
+            <!-- Contributions Column -->
+            <div class="card flex-col justify-between">
+              <div>
+                <h3 class="card-heading" style="font-size: 1.05rem;">
+                  <i class="fa-solid fa-user-gear"></i> Presenter Contributions
+                </h3>
+                <ul class="consulting-bullets" style="font-size: 0.8rem;">
+                  <li>Schema Audit – Validated dataset structure and business mappings.</li>
+                  <li>Prompt Engineering – Designed standardized evaluation prompts.</li>
+                  <li>Run Execution – Conducted identical prompt testing.</li>
+                  <li>Analysis – Compared qualitative AI responses and documented findings.</li>
+                </ul>
+              </div>
+              <div style="font-size: 0.72rem; color: var(--text-secondary); border-top: 1px solid var(--border-color); padding-top: 8px;">
+                Note: No system coding or pipeline engineering was claimed.
+              </div>
+            </div>
+
+          </div>
+          
+          <div class="highlight-panel-blue" style="margin-top: 1.2rem; padding: 0.8rem 1.5rem;">
+            <span class="highlight-panel-blue-text" style="font-size: 0.85rem;">
+              <strong>Framework Focus:</strong> Evaluated model performance using identical datasets and prompts to test business reasoning, rather than comparing technical feature sets.
+            </span>
+            <span class="highlight-panel-blue-val" style="font-size: 1.1rem;">Objective Benchmark</span>
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 4: Project 1 - AI Agent Evaluation</strong></p>
+          <p>This slide introduces the first project, evaluating generative AI models for business support.</p>
+          <ul>
+            <li>The goal was to test how accurately these models could analyze unstructured text logs, like customer visit records, and extract business insights.</li>
+            <li>In the center is a screenshot of the visit dataset from Databricks. It contains columns for Visit Date, Division, Customer, and Visit Summary.</li>
+            <li>My contribution was auditing the dataset schema, designing the prompts, running the tests, and documenting the results.</li>
+            <li>To ensure a fair test, we developed a standardized evaluation methodology, which is outlined next.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 5 ================= -->
+      <div class="slide-canvas" id="slide-5">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">AI Evaluation Methodology</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          
+          <div style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+            We established a reproducible framework to evaluate the AI models, grading their responses across five key categories to determine business utility.
+          </div>
+
+          <!-- 5 Criteria Cards -->
+          <div class="grid-3 flex-grow" style="gap: 1rem; margin-bottom: 1.5rem;">
+            
+            <div class="card">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-brain"></i> Business Grasp
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Ability to recognize specific RIL division names (POY, PSF, FDY) and identify product contexts in unstructured text.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-arrow-trend-up"></i> Churn Analysis
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Effectiveness in identifying accounts showing signs of attrition or price sensitivity in visit notes.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-handshake"></i> Relationship Tone
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Ability to categorize customer feedback into levels of trust (High, Medium, Low) based on unstructured descriptions.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-file-invoice"></i> Reporting Quality
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Structure, formatting, and professional tone of the generated reports, ensuring they are ready for management review.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-lightbulb"></i> Actionability
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Relevance and realism of the model's suggestions for resolving complaints or strengthening relationships.
+              </p>
+            </div>
+
+            <div class="card highlighted flex-col justify-between" style="background-color: #FFFDF5; border-color: var(--ril-gold);">
+              <div style="font-weight: 600; font-size: 0.95rem; color: var(--ril-navy); margin-bottom: 0.25rem;">Evaluation Standard</div>
+              <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4;">
+                All models were evaluated using identical prompts and standardized qualitative criteria to ensure a fair comparison.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Process Flow at Bottom -->
+          <div class="process-flow">
+            <div class="process-step">
+              <div class="process-step-title"><span class="icon-obj" style="width:18px; height:18px; font-size:0.65rem;">1</span> Load Dataset</div>
+              <div class="process-step-desc">Establish schemas in Databricks</div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-title"><span class="icon-obj" style="width:18px; height:18px; font-size:0.65rem;">2</span> Run Prompts</div>
+              <div class="process-step-desc">Query models with identical prompts</div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-title"><span class="icon-obj" style="width:18px; height:18px; font-size:0.65rem;">3</span> Evaluate Output</div>
+              <div class="process-step-desc">Assess answers across the 5 categories</div>
+            </div>
+            <div class="process-step">
+              <div class="process-step-title"><span class="icon-obj" style="width:18px; height:18px; font-size:0.65rem;">4</span> Compare Findings</div>
+              <div class="process-step-desc">Compare results and compile recommendations</div>
+            </div>
+          </div>
+
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 5: AI Evaluation Methodology</strong></p>
+          <p>This slide outlines the structured framework we used to evaluate model performance.</p>
+          <ul>
+            <li>To keep the test objective, we graded each model's output across five areas: Business Grasp, Churn Analysis, Relationship Tone, Reporting Quality, and the Actionability of recommendations.</li>
+            <li>At the bottom is the four-step process: loading the data, running identical prompts, evaluating the outputs, and comparing findings qualitatively.</li>
+            <li>Next, we will review the evaluation findings and look at how Databricks Genie performed during our tests.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 6 ================= -->
+      <div class="slide-canvas" id="slide-6">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Evaluation Results & Insights</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <div class="grid-2">
+            
+            <!-- Left Side Results Cards -->
+            <div class="flex-col justify-between">
+              
+              <div class="card highlighted" style="margin-bottom: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.9rem; font-weight: 600; color: var(--ril-navy);">Claude 3.5 Sonnet</span>
+                  <span class="badge-model claude">Most Suitable for Business Reasoning: Strategic Insight</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45;">
+                  <strong>Strengths:</strong> Provided clear business reasoning, identified customer attrition risks, and generated structured summaries suitable for management.
+                </p>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); margin-top: 4px;">
+                  Qualitative Assessment: Highly recommended for qualitative, strategy-focused analysis.
+                </div>
+              </div>
+
+              <div class="card" style="margin-bottom: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.9rem; font-weight: 600; color: var(--ril-navy);">Databricks Genie</span>
+                  <span class="badge-model genie">Best for Enterprise Data Exploration: SQL & Schema Discovery</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45;">
+                  <strong>Strengths:</strong> Accurately translated natural language prompts into executable SQL queries, making it highly effective for ad-hoc database searches.
+                </p>
+                <div style="font-size: 0.72rem; color: var(--text-secondary); margin-top: 4px;">
+                  Qualitative Assessment: Highly recommended for technical data exploration and ad-hoc query validation.
+                </div>
+              </div>
+
+              <div class="card" style="margin-bottom: 0.75rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                  <span style="font-size: 0.9rem; font-weight: 600; color: var(--ril-navy);">ChatGPT-4o & Gemini Pro</span>
+                  <span class="badge-model chatgpt" style="background-color: #E2E8F0; color: #475569;">General Analytical Performance</span>
+                </div>
+                <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45;">
+                  <strong>Strengths:</strong> Both models were effective for text summarization, but their recommendations were often generic and required editing.
+                </p>
+              </div>
+
+            </div>
+
+            <!-- Right Side Genie SS -->
+            <div class="flex-col">
+              <div style="font-size: 0.85rem; font-weight: 600; color: var(--ril-navy); margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                <span>Databricks Genie Interface</span>
+                <span style="font-weight: 400; color: var(--text-secondary);">Business Reasoning Prompt</span>
+              </div>
+              <div class="screenshot-container flex-grow">
+                <img src="assets/genie_business_reasoning.png" alt="Databricks Genie Business Prompt Screenshot">
+              </div>
+              <div class="table-meta-text">
+                Genie translates natural language prompts into SQL joins to categorize account trust levels without manual coding.
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 6: Evaluation Results</strong></p>
+          <p>This slide summarizes the evaluation results for each model.</p>
+          <ul>
+            <li>Claude 3.5 Sonnet proved most suitable for business reasoning and strategic analysis, generating reports that required very little editing.</li>
+            <li>Databricks Genie proved highly effective for database exploration. On the right, the screenshot shows Genie translating our relationship evaluation prompt into SQL.</li>
+            <li>ChatGPT and Gemini were useful for quick summaries, but their business recommendations were often too generic for management reviews.</li>
+            <li>Now we will transition to Project 2, the design and development of the division performance dashboard.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 7 ================= -->
+      <div class="slide-canvas" id="slide-7">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Executive Dashboard Development</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body justify-between">
+          
+          <div style="font-size: 0.95rem; line-height: 1.6; max-width: 850px; color: var(--text-primary); margin-bottom: 1.5rem;">
+            Dashboard development required translating raw metrics into key performance indicators. We organized the development process into four structured stages.
+          </div>
+
+          <!-- 4 Connected Process Cards -->
+          <div class="grid-2" style="grid-template-rows: auto auto; gap: 1.2rem; flex: 1;">
+            
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem;">
+                <span class="icon-obj">1</span> Data Auditing
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Audited and cleaned raw division performance data, verifying metrics against target business values.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem;">
+                <span class="icon-obj">2</span> KPI Definition
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Selected key operational metrics, including fixed cost variance, EBITDA, safety events, and plant efficiency index.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem;">
+                <span class="icon-obj">3</span> Worksheet Design
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Created individual Tableau worksheets, designing custom radial performance dials and status trackers.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem;">
+                <span class="icon-obj">4</span> Sheet Integration
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45;">
+                Assembled the worksheets into a single dashboard layout, organizing sections to present a clear division scorecard.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Bottom Contributions Box -->
+          <div class="card" style="margin-top: 1.5rem; background-color: var(--bg-card); padding: 1rem 1.5rem;">
+            <div style="font-weight: 600; font-size: 0.88rem; color: var(--ril-navy); margin-bottom: 0.3rem;">
+              Presenter Contributions:
+            </div>
+            <p style="font-size: 0.78rem; color: var(--text-secondary); line-height: 1.4;">
+              Cleaned the Division Scorecard dataset, designed worksheets, calculated target variances, and laid out the executive dashboard. (No database admin or server deployment tasks were claimed).
+            </p>
+          </div>
+
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 7: Executive Dashboard Development</strong></p>
+          <p>This slide outlines the development of the division performance dashboard in Tableau.</p>
+          <ul>
+            <li>We followed a four-stage process: auditing the raw performance data, defining key operational metrics, building individual worksheets, and integrating them into a final dashboard layout.</li>
+            <li>My work focused on cleaning the dataset, designing worksheets, calculating target variances, and laying out the dashboard.</li>
+            <li>We will look at the completed dashboard next.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 8 ================= -->
+      <div class="slide-canvas" id="slide-8">
+        <div class="slide-header" style="margin-bottom: 1rem;">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Final Executive Dashboard</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          
+          <!-- Hero Dashboard Screenshot with Annotation overlays -->
+          <div class="hero-dashboard-frame">
+            <img src="assets/tableau_dashboard_final.png" alt="Final Tableau Executive Dashboard Screenshot">
+            
+            <!-- Callout 1: Business Vertical -->
+            <div class="annotation-tag" style="top: 80px; left: 10px;" title="Business Vertical Breakdown">
+              <i class="fa-solid fa-list-check"></i> <strong>Business Verticals:</strong> Displays scores for Olefins, Aromatics, and Refining.
+            </div>
+            
+            <!-- Callout 2: Plant Performance -->
+            <div class="annotation-tag" style="top: 210px; left: 10px;" title="Individual Plant Scores">
+              <i class="fa-solid fa-industry"></i> <strong>Plant Performance:</strong> Details operational scores for individual plants.
+            </div>
+            
+            <!-- Callout 3: KPI Monitoring Table -->
+            <div class="annotation-tag" style="top: 60px; right: 20px;" title="KPI Target Variances">
+              <i class="fa-solid fa-square-poll-vertical"></i> <strong>KPI Monitoring:</strong> Compares actual metrics against target values.
+            </div>
+            
+            <!-- Callout 4: Performance Gauges -->
+            <div class="annotation-tag" style="bottom: 15px; right: 20px;" title="Radial Gauges Details">
+              <i class="fa-solid fa-gauge-high"></i> <strong>Performance Gauges:</strong> Visual dials showing scores for each division.
+            </div>
+          </div>
+
+          <div style="font-size: 0.78rem; color: var(--text-secondary); text-align: center; margin-top: 1rem; line-height: 1.4;">
+            This single-screen layout is designed for management reviews, summarizing operational scores and variances in one view.
+          </div>
+
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 8: Final Executive Dashboard</strong></p>
+          <p>This is the completed Tableau dashboard, designed to give managers a quick overview of division health.</p>
+          <ul>
+            <li>In the top left, we track performance scores for core Business Verticals, like Aromatics and Refining.</li>
+            <li>In the bottom left, the dashboard details individual Plant Scores.</li>
+            <li>The center table compares actual costs and production metrics against targets.</li>
+            <li>At the bottom, custom radial dials display performance scores for each division.</li>
+            <li>Next, we will review the challenges encountered during the project and how they were resolved.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 9 ================= -->
+      <div class="slide-canvas" id="slide-9">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Challenges & Solutions</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          
+          <div style="font-size: 0.95rem; color: var(--text-primary); margin-bottom: 1.5rem;">
+            During the projects, we resolved several technical and analytical challenges to deliver clean results.
+          </div>
+
+          <!-- 2x2 Grid of Challenges -->
+          <div class="grid-2 flex-grow" style="gap: 1.2rem;">
+            
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-graduation-cap"></i> Databricks Learning
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45; margin-bottom: 0.75rem;">
+                <strong>Challenge:</strong> Navigating a new data intelligence platform and executing complex SQL queries quickly.
+              </p>
+              <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+                <strong>Solution:</strong> Studied Databricks training resources and ran test queries on sample tables to confirm syntax.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-scale-balanced"></i> Fair AI Comparison
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45; margin-bottom: 0.75rem;">
+                <strong>Challenge:</strong> Comparing models objectively when their outputs vary in length, detail, and style.
+              </p>
+              <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+                <strong>Solution:</strong> Designed a standardized scorecard and structured prompts to ensure similar testing conditions.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-database"></i> Incomplete Dataset Fields
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45; margin-bottom: 0.75rem;">
+                <strong>Challenge:</strong> Working with incomplete fields in the Division Scorecard dataset.
+              </p>
+              <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+                <strong>Solution:</strong> Created computed columns in Tableau and used representative averages to fill empty fields while keeping business context.
+              </p>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.5rem; color: var(--ril-navy);">
+                <i class="fa-solid fa-compass"></i> Radial Gauges in Tableau
+              </div>
+              <p style="font-size: 0.8rem; color: var(--text-secondary); line-height: 1.45; margin-bottom: 0.75rem;">
+                <strong>Challenge:</strong> Building semi-circular performance dials, which are not supported natively in Tableau.
+              </p>
+              <p style="font-size: 0.8rem; color: var(--text-primary); line-height: 1.45; border-top: 1px solid var(--border-color); padding-top: 0.5rem;">
+                <strong>Solution:</strong> Calculated coordinates using trigonometric formulas to map dashboard values to radial gauges.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 9: Challenges & Solutions</strong></p>
+          <p>This slide reviews the technical challenges encountered and how they were resolved.</p>
+          <ul>
+            <li>To learn the Databricks ecosystem quickly, I studied official guides and practiced running queries on sample datasets.</li>
+            <li>To compare the AI models fairly, we created a standardized scoring template.</li>
+            <li>For Project 2, we handled missing data fields by calculating representative averages.</li>
+            <li>Creating the radial dials in Tableau required calculating angles and coordinates manually, using trigonometric formulas.</li>
+            <li>Next, we will review the outcomes and key learnings from the internship.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 10 ================= -->
+      <div class="slide-canvas" id="slide-10">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <h2 class="slide-title">Outcomes & Key Learnings</h2>
+            <div class="slide-title-line"></div>
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 0.9rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text" style="font-size: 0.55rem;">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          
+          <!-- 3 Columns for Learnings -->
+          <div class="grid-3 flex-grow" style="margin-bottom: 1.5rem;">
+            
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.75rem;">
+                <i class="fa-solid fa-laptop-code"></i> Technical Growth
+              </div>
+              <ul class="consulting-bullets" style="font-size: 0.8rem; padding-left: 0;">
+                <li>Developed skills in <strong>Databricks SQL</strong> querying and data validation.</li>
+                <li>Learned <strong>Tableau design</strong> workflows and calculated fields.</li>
+                <li>Gained experience in <strong>prompt engineering</strong> and evaluation templates.</li>
+              </ul>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.75rem;">
+                <i class="fa-solid fa-chart-line"></i> Business Context
+              </div>
+              <ul class="consulting-bullets" style="font-size: 0.8rem; padding-left: 0;">
+                <li>Learned how IT support aligns with PetChem operations.</li>
+                <li>Understood how to select and define <strong>business KPIs</strong>.</li>
+                <li>Practiced designing dashboard layouts optimized for executive review.</li>
+              </ul>
+            </div>
+
+            <div class="card highlighted">
+              <div class="card-heading" style="font-size: 1.05rem; margin-bottom: 0.75rem;">
+                <i class="fa-solid fa-user-tie"></i> Professional Skills
+              </div>
+              <ul class="consulting-bullets" style="font-size: 0.8rem; padding-left: 0;">
+                <li>Developed structured methods for evaluating software tools.</li>
+                <li>Learned to prioritize business needs over software features.</li>
+                <li>Improved my ability to explain data findings clearly to managers.</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Blue Outcomes Panel -->
+          <div class="highlight-panel-blue">
+            <span class="highlight-panel-blue-text">
+              <strong>Business Outcomes:</strong> Delivered a reproducible AI evaluation framework and a dashboard structure for tracking division performance.
+            </span>
+            <span class="highlight-panel-blue-val">Project Value</span>
+          </div>
+
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 10: Outcomes & Key Learnings</strong></p>
+          <p>This slide summarizes the technical, business, and professional outcomes of the internship.</p>
+          <ul>
+            <li>On the technical side, I gained experience in Databricks SQL querying and Tableau dashboard design.</li>
+            <li>For business understanding, I learned how IT aligns with PetChem operations and how to select metrics that matter to managers.</li>
+            <li>Professionally, the project taught me to design analytics with the end-user in mind, focusing on clarity.</li>
+            <li>Ultimately, the deliverables provide a structured template for future AI evaluations and a clean performance dashboard.</li>
+            <li>Let's conclude the presentation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= SLIDE 11 ================= -->
+      <div class="slide-canvas" id="slide-11">
+        <div class="slide-header">
+          <div class="slide-title-wrapper">
+            <!-- Blank for title page structure -->
+          </div>
+          <div class="slide-logo-container">
+            <span class="bold-accent" style="font-size: 1.1rem; color: var(--ril-navy);">Reliance</span>
+            <span class="ril-logo-text">Industries Limited</span>
+          </div>
+        </div>
+        <div class="slide-body">
+          <div class="thank-you-layout">
+            <div class="thank-you-title">THANK YOU</div>
+            <div class="thank-you-subtitle">Questions & Discussion</div>
+            <div class="thank-you-divider"></div>
+            <div class="thank-you-footnote">
+              <p style="font-weight: 600; color: var(--ril-navy); margin-bottom: 0.25rem;">Summer Internship Project Review</p>
+              <p style="color: var(--text-secondary);">Reliance Industries Limited — PetChem IT Division</p>
+            </div>
+          </div>
+        </div>
+        <!-- Speaker Notes -->
+        <div class="speaker-notes" style="display:none;">
+          <p><strong>Slide 11: Thank You</strong></p>
+          <p>This concludes my presentation review.</p>
+          <ul>
+            <li>I would like to express my gratitude to my mentor, Mr. Saurabh Shringarpure, and the PetChem IT team for their guidance.</li>
+            <li>I welcome any questions or feedback you may have about either of the projects. Thank you.</li>
+          </ul>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Right Speaker Notes Sidebar -->
+    <aside class="notes-sidebar" id="notes-sidebar">
+      <div class="notes-header">
+        <i class="fa-solid fa-file-lines text-gold"></i> Presenter Notes (Sync)
+      </div>
+      <div class="notes-content" id="notes-content">
+        <!-- Loaded dynamically by app.js -->
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Bottom Navigation Control Footer -->
+  <footer class="nav-footer">
+    <div class="nav-buttons">
+      <button class="btn-nav" id="btn-prev" title="Previous Slide (Left Arrow)">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="btn-nav" id="btn-next" title="Next Slide (Right Arrow/Space)">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+    
+    <div class="progress-bar-container">
+      <div class="progress-bar-fill" id="progress-bar"></div>
+    </div>
+    
+    <div class="slide-counter" id="slide-counter">Slide 1 of 11</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
