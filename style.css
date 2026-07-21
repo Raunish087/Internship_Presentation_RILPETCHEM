@@ -492,7 +492,7 @@ ul.consulting-bullets li::before {
 .timeline-line {
   position: absolute;
   top: 58px;
-  left: 90px;
+  left: 100px;
   right: 120px;
   height: 4px;
   background-color: var(--border-color);
@@ -502,7 +502,7 @@ ul.consulting-bullets li::before {
 .timeline-line-progress {
   position: absolute;
   top: 58px;
-  left: 90px;
+  left: 100px;
   right: 120px;
   height: 4px;
   background-color: var(--ril-navy);
