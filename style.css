@@ -532,6 +532,8 @@ ul.consulting-bullets li::before {
   color: var(--text-secondary);
   transition: all 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+  top: 10px;
 }
 
 .timeline-step.completed .timeline-node {
