@@ -518,6 +518,11 @@ ul.consulting-bullets li::before {
   text-align: center;
 }
 
+.timeline-step.completed {
+  position: relative;
+  top: 10px;
+}
+
 .timeline-node {
   width: 60px;
   height: 60px;
