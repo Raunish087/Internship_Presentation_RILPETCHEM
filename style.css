@@ -491,9 +491,9 @@ ul.consulting-bullets li::before {
 
 .timeline-line {
   position: absolute;
-  top: 30px;
-  left: 5%;
-  right: 5%;
+  top: 58px;
+  left: 85px;
+  right: 145px;
   height: 4px;
   background-color: var(--border-color);
   z-index: 1;
