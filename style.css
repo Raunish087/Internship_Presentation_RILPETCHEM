@@ -636,7 +636,7 @@ ul.consulting-bullets li::before {
 .hero-dashboard-frame {
   position: relative;
   width: 94%;
-  height: 450px;
+  height: 470px;
   margin: 0 auto;
   border: 1px solid var(--border-color);
   border-radius: 10px;
