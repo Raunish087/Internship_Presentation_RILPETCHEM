@@ -493,7 +493,7 @@ ul.consulting-bullets li::before {
   position: absolute;
   top: 58px;
   left: 85px;
-  right: 175px;
+  right: 120px;
   height: 4px;
   background-color: var(--border-color);
   z-index: 1;
@@ -503,7 +503,7 @@ ul.consulting-bullets li::before {
   position: absolute;
   top: 58px;
   left: 85px;
-  right: 175px;
+  right: 120px;
   height: 4px;
   background-color: var(--ril-navy);
   z-index: 2;
