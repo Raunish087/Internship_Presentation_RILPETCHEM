@@ -635,19 +635,21 @@ ul.consulting-bullets li::before {
 /* Specific Screenshot Frame overlays */
 .hero-dashboard-frame {
   position: relative;
-  width: 86%;
-  height: 400px;
+  width: 90%;
+  height: 430px;
   margin: 0 auto;
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.06);
   background-color: #FFF;
+  overflow: hidden;
 }
 
 .hero-dashboard-frame img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  object-position: center;
 }
 
 /* Annotation Lines & Labels */
