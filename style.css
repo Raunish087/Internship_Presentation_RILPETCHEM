@@ -503,7 +503,7 @@ ul.consulting-bullets li::before {
   position: absolute;
   top: 30px;
   left: 5%;
-  width: 80%;
+  width: 100%;
   height: 4px;
   background-color: var(--ril-navy);
   z-index: 2;
