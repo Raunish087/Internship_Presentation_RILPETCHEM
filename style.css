@@ -186,15 +186,16 @@ header.app-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 0.5rem;
   position: relative;
   overflow: auto;
 }
 
 /* Slide Shell */
 .slide-canvas {
-  width: var(--slide-width);
-  height: var(--slide-height);
+ width:min(95vw, calc(95vh * 16 / 9));
+    aspect-ratio:16/9;
+    height:auto;
   background-color: var(--bg-slide);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
