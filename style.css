@@ -1015,14 +1015,16 @@ ul.consulting-bullets li::before {
 
 #slide-genie .card.highlighted .screenshot-container{
     flex:1;
-    min-height:135px;
+    min-height:150px;
     background:#fff;
+    overflow:hidden;
 }
 
 #slide-genie .card.highlighted img{
     width:100%;
     height:100%;
-    object-fit:contain;
+    object-fit:cover;
+    object-position:top;
 }
 
 /* ---------- Four Screenshot Cards ---------- */
@@ -1045,14 +1047,15 @@ ul.consulting-bullets li::before {
 }
 
 #slide-genie .slide-body>div:nth-child(2) .screenshot-container{
-    height:125px;
+    height:145px;
     background:#fff;
 }
 
 #slide-genie .slide-body>div:nth-child(2) img{
     width:100%;
     height:100%;
-    object-fit:contain;
+    object-fit:cover;
+    object-position:top;
     transition:transform .25s ease;
 }
 
