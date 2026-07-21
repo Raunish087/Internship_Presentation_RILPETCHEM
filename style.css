@@ -635,8 +635,8 @@ ul.consulting-bullets li::before {
 /* Specific Screenshot Frame overlays */
 .hero-dashboard-frame {
   position: relative;
-  width: 90%;
-  height: 430px;
+  width: 94%;
+  height: 450px;
   margin: 0 auto;
   border: 1px solid var(--border-color);
   border-radius: 10px;
