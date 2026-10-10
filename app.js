@@ -33,8 +33,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Sync Speaker Notes
     const activeSlide = slides[currentSlideIndex];
-    const notesHtml = activeSlide.querySelector('.speaker-notes').innerHTML;
-    notesContent.innerHTML = notesHtml;
+    const speakerNotes = activeSlide.querySelector('.speaker-notes');
+    notesContent.innerHTML = speakerNotes ? speakerNotes.innerHTML : '<p>No presenter notes for this slide.</p>';
+    prevBtn.disabled = currentSlideIndex === 0;
+    nextBtn.disabled = currentSlideIndex === slides.length - 1;
     
     // Sync Navigation Footer
     const slideNumber = currentSlideIndex + 1;
