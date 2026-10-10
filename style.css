@@ -1120,3 +1120,9 @@ ul.consulting-bullets li::before {
     }
 
 }
+
+
+/* Mid-term viva revision: ensure newly consolidated slides fit the canvas cleanly. */
+#slide-3 .slide-body, #slide-4 .slide-body, #slide-6 .slide-body, #slide-9 .slide-body { min-height: 0; }
+#slide-3 .card, #slide-4 .card, #slide-6 .card, #slide-9 .card { min-width: 0; }
+#slide-3 .card p, #slide-4 .card p, #slide-6 .card p, #slide-9 .card p { overflow-wrap: anywhere; }
